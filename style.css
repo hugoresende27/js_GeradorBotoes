@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins&display=swap');
+/*@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");*/
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=MuseoModerno:wght@100&display=swap');
+:root
+{
+    --left-bg-color:rgba(87,84,236,0.7);
+    --right-bg-color:rgba(43,43,43,0.8);
+    --left-btn-color:rgba(87,83,236,1);
+    --right-btn-color:rgb(239, 243, 8);
+
+    --hover-width:75%;
+    --other-width:25%;
+    --speed: 1000ms;
+}
+
+* 
+{
+    box-sizing: border-box;
+   
+}
+
+/*alinhar conteudos ao centro*/
+
+body
+{
+    background-image: linear-gradient(90deg, #6273c0, #2b88f0);
+    font-family: 'MuseoModerno',sans-serif;
+    font-weight: 600;
+    display: flex;          /*coloca tudo em linha*/
+    flex-direction: column; /*coloca tudo em coluna*/
+    align-items: center;    /*alinha horizontalmente*/
+    justify-content: center;/*alinha tudo verticalmente com uso de height:100vh*/
+    height: 100vh;
+    overflow: hidden; /*BARRA DE SCROLL DOWN, HIDDEN ESCONDIDA*/
+    margin: 0;
+    overflow-x: hidden; /*REMOVER BARRA DE SCROLL HORIZONTAL*/
+    padding: 20px;
+}
+
+h3{
+    color: #fff;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.main{
+    width: auto;/*500px;*/
+}
+textarea{
+    border: none;
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-family: inherit;/*vai usar a font herdade, 'MuseoModerno'*/
+    padding: 10px;
+    margin: 0 0 20px;
+    font-size: 16px;
+}
+
+.tag{
+    cursor: pointer;
+    background-color: #f0932b;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 0 5px 10px 0;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.tag.realce{
+    background-color: #273c75;
+}
+
+
+
+
+
+
+@media(max-width: 480px)        /*para ecras mais pequenos*/
+{
+    body{
+        overflow:visible;
+    }
+
+    footer 
+    {
+        display: none;
+    };
+
+}
+
+@media (max-width: 800px)
+{
+    body{
+        overflow:visible;
+    }
+    footer 
+    {
+        display: none;
+    };
+  
+
+}
+
+
+/*estilos do footer */
+
+footer{
+    font-size: 8pt;
+    color: rgb(255, 196, 0);
+    position: absolute;
+    text-align: center;
+    border-top: 1px dashed;
+    font-family:'Mulish',sans-serif;
+    bottom: 0.5rem; 
+    font-weight: 700;
+}
+
+footer a{
+   color: #171a13;  /*cor dos links a preto*/
+   text-decoration: none;     /*retira o sublinhado dos links*/
+}
+
+footer a:hover{
+    color: rgb(255, 196, 0);
+}
+
+
+
